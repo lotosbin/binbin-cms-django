@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ <head> 
+   <meta http-equiv="Content-Type" content="text/html" /> 
+   <title>新闻统计</title> 
+ </head> 
+ <body> 
+   <h1>新闻统计中心</h1> 
+{% for list_dict in article_listing %} 
+   <ul> 
+   	 <li>新闻标题: {{ list_dict.items_title }}</li> 
+     <li>新闻数目: {{ list_dict.item_count }}</li> 
+   </ul> 
+{% endfor %} 
+ </body> 
+</html>

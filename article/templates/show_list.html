@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <meta http-equiv="Content-Type" content="text/html" />
+   <title>新闻中心</title>
+ </head>
+ <body>
+   <h1>新闻中心</h1>
+{% for list_dict in article_listing %}
+   <h2>{{ list_dict.list_object.title }}</h2>
+   <ul>
+   	 <li>新闻分类: {{ list_dict.article_list }}</li>
+     <li>新闻标题: <a href="{% url 'article:show' list_dict.items_id %}">{{ list_dict.items_title }}</a></li> 
+	 <li>发表时间: {{ list_dict.created_date }}</li>
+   </ul>
+{% endfor %}
+ </body>
+</html>

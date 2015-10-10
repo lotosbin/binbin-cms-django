@@ -19,5 +19,6 @@ from composeexample import views
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^polls/', include('polls.urls', namespace="polls")),
+    url(r'^article/', include('article.urls', namespace="article")),
     url(r'^admin/', include(admin.site.urls)),
 ]
