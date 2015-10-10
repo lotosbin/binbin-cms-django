@@ -25,7 +25,7 @@ SECRET_KEY = '!j6*3&(!+%opdqf540vyx^%bc1vgm*oiy+28+vc$&=0j0=nahj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'composeexample.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/liubinbin/Documents/django/templates'],
+        'DIRS': ['/home/liubinbin/Documents/django/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
