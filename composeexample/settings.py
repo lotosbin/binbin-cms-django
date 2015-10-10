@@ -57,7 +57,7 @@ ROOT_URLCONF = 'composeexample.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/liubinbin/Documents/django/templates/'],
+        'DIRS': ['composeexample/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
